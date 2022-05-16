@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post("/login", (req, res) => {
   const credentials = {
     clientId: "f2623a42d54a4038ac4eb602704e0c1b",
-    clientSecret: "61fbfe1c0bdf47e58541ff8f2cee15c3",
+    clientSecret: "*********************",
     redirectUri: "http://localhost:3000/",
   };
   let code = req.body.code;
@@ -34,7 +34,7 @@ app.post("/refresh", (req, res) => {
   const refreshToken = req.body.refreshToken;
   const credentials = {
     clientId: "f2623a42d54a4038ac4eb602704e0c1b",
-    clientSecret: "61fbfe1c0bdf47e58541ff8f2cee15c3",
+    clientSecret: "****************************",
     redirectUri: "http://localhost:3000/",
     refreshToken: refreshToken,
   };
